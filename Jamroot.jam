@@ -1,0 +1,7 @@
+using clang-win ;
+project libraryCalculate ;
+install install-bin : abstraction : <location>"." ;
+install install-bin : expansion : <location>"." ;
+install install-bin : modulus : <location>"." ;
+install install-bin : splitting : <location>"." ;
+install install-bin : supplemen : <location>"." ;

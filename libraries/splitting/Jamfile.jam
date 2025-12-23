@@ -1,0 +1,1 @@
+lib splitting : splitting.cpp : <variant>release ;

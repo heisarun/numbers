@@ -1,0 +1,1 @@
+lib supplement : supplement.cpp : <variant>release ;
