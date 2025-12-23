@@ -1,7 +1,14 @@
 using clang-win ;
-project libraryCalculate ;
-install install-bin : abstraction : <location>"." ;
-install install-bin : expansion : <location>"." ;
-install install-bin : modulus : <location>"." ;
-install install-bin : splitting : <location>"." ;
-install install-bin : supplemen : <location>"." ;
+project numbers : requirements <variant>release ;
+
+build-project libraries/abstraction ;
+build-project libraries/expansion ;
+build-project libraries/splitting ;
+build-project libraries/supplement ;
+build-project libraries/modulusArithmetic ;
+
+install install-bin : libraries/abstraction : <location>"." ;
+install install-bin : libraries/expansion : <location>"." ;
+install install-bin : libraries/modulusArithmetic : <location>"." ;
+install install-bin : libraries/splitting : <location>"." ;
+install install-bin : libraies/supplement : <location>"." ;

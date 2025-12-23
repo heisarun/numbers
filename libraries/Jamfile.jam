@@ -1,6 +1,1 @@
-project libraries ;
-build-project abstraction ;
-build-project expansion ;
-build-project splitting ;
-build-project supplement ;
-build-project main ;
+exe main : main.cpp expansion abstraction splitting supplement ;
