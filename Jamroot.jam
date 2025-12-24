@@ -1,9 +1,10 @@
 using clang-win ;
-project numbers : requirements <variant>release ;
+project numbers : requirements <variant>release <cxxflags>"-std=c++23 -stdlib=libc++ -march=znver4" ;
 
 exe main :
           main.cpp libraries//expansion libraries//abstraction libraries//splitting libraries//supplement libraries//modulusArithmetic ;
 
+install install-libraries : main.cpp : <location>"." ;
 install install-libraries : libraries//abstraction : <location>"." ;
 install install-libraries : libraries//expansion : <location>"." ;
 install install-libraries : libraries//modulusArithmetic : <location>"." ;
