@@ -1,1 +1,5 @@
-exe main : main.cpp expansion abstraction splitting supplement ;
+build-project abstraction ;
+build-project expansion ;
+build-project splitting ;
+build-project supplement ;
+build-project modulusArithmetic ;

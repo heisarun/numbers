@@ -1,14 +1,11 @@
 using clang-win ;
 project numbers : requirements <variant>release ;
 
-build-project libraries/abstraction ;
-build-project libraries/expansion ;
-build-project libraries/splitting ;
-build-project libraries/supplement ;
-build-project libraries/modulusArithmetic ;
+exe main :
+          main.cpp libraries//expansion libraries//abstraction libraries//splitting libraries//supplement libraries//modulusArithmetic ;
 
-install install-bin : libraries/abstraction : <location>"." ;
-install install-bin : libraries/expansion : <location>"." ;
-install install-bin : libraries/modulusArithmetic : <location>"." ;
-install install-bin : libraries/splitting : <location>"." ;
-install install-bin : libraies/supplement : <location>"." ;
+install install-libraries : libraries//abstraction : <location>"." ;
+install install-libraries : libraries//expansion : <location>"." ;
+install install-libraries : libraries//modulusArithmetic : <location>"." ;
+install install-libraries : libraries//splitting : <location>"." ;
+install install-libraries : libraies//supplement : <location>"." ;
